@@ -43,10 +43,12 @@ if(is_user_logged_in()){
   }
 }
 
+/*
 echo "<pre>";
  var_dump($sso_url);
 echo "</pre>";
 exit;
+*/
 if($redirect && isset($sso_url)) {
 	header("Location: ".$sso_url);
 } else {
